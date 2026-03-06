@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qo'llanma - ProtectPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">P</div>
+                <div class="logo-text">
+                    <span class="brand-name">ProtectPro</span>
+                    <span class="brand-tagline">Elite Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Asosiy</a></li>
+                <li><a href="guide.html" class="active" data-i18n="nav.guide">Qo'llanma</a></li>
+                <li><a href="courses.html" data-i18n="nav.courses">Kurslar</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Aloqa</a></li>
+                <li><a href="team.html" data-i18n="nav.team">Jamoa</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container guide-page">
+        <section class="page-header">
+            <h1 class="page-title" data-i18n="guide.pageTitle">Foydalanish Qo'llanmasi</h1>
+            <p class="page-subtitle" data-i18n="guide.pageSubtitle">ProtectPro platformasidan to'liq foydalanish
+                bo'yicha batafsil yo'riqnoma</p>
+        </section>
+
+        <div class="guide-content">
+            <div class="guide-sidebar">
+                <div class="sidebar-menu">
+                    <h3 data-i18n="guide.sidebar.title">Bo'limlar</h3>
+                    <a href="#quick-start" class="sidebar-link active" data-i18n="guide.sidebar.quickStart">Tez
+                        Boshlash</a>
+                    <a href="#scanner" class="sidebar-link" data-i18n="guide.sidebar.scanner">URL Skanerlash</a>
+                    <a href="#api" class="sidebar-link" data-i18n="guide.sidebar.api">API Integratsiya</a>
+                    <a href="#pricing" class="sidebar-link" data-i18n="guide.sidebar.pricing">Tariflar</a>
+                    <a href="#faq" class="sidebar-link" data-i18n="guide.sidebar.faq">Savol-Javob</a>
+                </div>
+            </div>
+
+            <div class="guide-main">
+                <section id="quick-start" class="guide-section">
+                    <h2 class="guide-section-title">
+                        <span class="section-number">01</span>
+                        <span data-i18n="guide.quickStart">Tez Boshlash</span>
+                    </h2>
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.step1">1-qadam: Ro'yxatdan o'tish</h3>
+                        <p data-i18n="guide.step1Desc">ProtectPro platformasidan foydalanish uchun avval ro'yxatdan
+                            o'ting:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span data-i18n="guide.registration">Registratsiya</span>
+                            </div>
+                            <pre><code>• Email manzilingizni kiriting
+• Ishonchli parol yarating (min. 8 belgi)
+• Tasdiqlash kodini email orqali qabul qiling
+• Profilingizni to'ldiring</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.step2">2-qadam: Dashboard</h3>
+                        <p data-i18n="guide.step2Desc">Kirganingizdan keyin sizda quyidagi imkoniyatlar mavjud:</p>
+                        <ul class="feature-list">
+                            <li data-i18n="featuresList.urlCheck">✓ URL tekshirish (Quick & Deep scan)</li>
+                            <li data-i18n="featuresList.apkCheck">✓ APK fayl tekshirish (Premium)</li>
+                            <li data-i18n="featuresList.history">✓ Skanerlash tarixi ko'rish</li>
+                            <li data-i18n="featuresList.apiKey">✓ API kalitini olish</li>
+                            <li data-i18n="featuresList.stats">✓ Shaxsiy statistika</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="scanner" class="guide-section">
+                    <h2 class="guide-section-title">
+                        <span class="section-number">02</span>
+                        <span data-i18n="guide.scanner">URL Skanerlash</span>
+                    </h2>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.quickScan">Tez Skanerlash (Quick Scan)</h3>
+                        <p data-i18n="guide.quickScanDesc">1-3 soniya ichida asosiy xavflarni aniqlaydi:</p>
+                        <div class="terminal-example">
+                            <div class="terminal-header">
+                                <div class="terminal-title">Quick Scan Process</div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="term-line"><span class="term-prompt">$</span> protectpro scan --quick
+                                    https://example.com</div>
+                                <div class="term-line"><span class="term-success">✓</span> Checking domain reputation...
+                                </div>
+                                <div class="term-line"><span class="term-success">✓</span> Analyzing URL structure...
+                                </div>
+                                <div class="term-line"><span class="term-success">✓</span> Checking typosquatting...
+                                </div>
+                                <div class="term-line"><span class="term-success">✓</span> WHOIS analysis...</div>
+                                <div class="term-line term-result">RESULT: SAFE (Risk Score: 0/100)</div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <strong data-i18n="guide.parametersChecked">Tekshiriladigan parametrlar:</strong>
+                            <ul>
+                                <li data-i18n="guide.domainReputation">Domain reputatsiyasi (Google Safe Browsing,
+                                    VirusTotal)</li>
+                                <li data-i18n="guide.typosquatting">Typosquatting (google.com → gooogle.com)</li>
+                                <li data-i18n="guide.urlStructure">URL tuzilmasi (base64, eval, obfuscation)</li>
+                                <li data-i18n="guide.whoisData">WHOIS ma'lumotlari (domen yoshi, registrator)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.deepScan">Chuqur Tahlil (Deep Scan)</h3>
+                        <p data-i18n="guide.deepScanDesc">20-60 soniya ichida to'liq sandbox tahlili:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Deep Scan Stages</span>
+                            </div>
+                            <pre><code>Phase 1: Headless Browser Launch (5s)
+  → Chromium sandbox environment
+  → JavaScript isolation enabled
+
+Phase 2: Page Load & Network Monitor (15-30s)
+  → Capturing all HTTP/HTTPS requests
+  → WebSocket connections tracking
+  → sendBeacon() calls detection
+
+Phase 3: Behavior Analysis (10-20s)
+  → eval() and obfuscated code detection
+  → Data exfiltration attempts
+  → Cookie/localStorage access patterns
+  → Suspicious redirects
+
+Phase 4: Report Generation (5s)
+  → Risk score calculation
+  → Detailed threat breakdown
+  → Screenshot & HAR export</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="scanner.apk">APK Fayl Tekshirish (Premium)</h3>
+                        <p data-i18n="scanner.apkDesc">Android ilovalarini xavfsizlik uchun tekshirish:</p>
+                        <div class="info-box warning">
+                            <strong data-i18n="scanner.apkNote">⚠️ Premium imkoniyat</strong>
+                            <p data-i18n="scanner.apkRequirement">APK tekshirish faqat Oylik yoki Yillik obunada mavjud.
+                            </p>
+                        </div>
+                        <ul>
+                            <li data-i18n="apkFeatures.manifest">✓ AndroidManifest.xml tahlili</li>
+                            <li data-i18n="apkFeatures.permissions">✓ Ruxsatlar (permissions) tekshiruvi</li>
+                            <li data-i18n="apkFeatures.malware">✓ Zararli kod qidiruvi</li>
+                            <li data-i18n="apkFeatures.signature">✓ Imzo (signature) tekshiruvi</li>
+                            <li data-i18n="apkFeatures.obfuscation">✓ Obfuscation aniqlash</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="api" class="guide-section">
+                    <h2 class="guide-section-title">
+                        <span class="section-number">03</span>
+                        <span data-i18n="guide.api">API Integratsiya</span>
+                    </h2>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.gettingStarted">API Kalitini Olish</h3>
+                        <p>Dashboard → Settings → API Keys bo'limidan API kalitingizni yarating.</p>
+
+                        <div class="api-demo">
+                            <h4 data-i18n="guide.api">API Endpoint:</h4>
+                            <div class="api-url-box">
+                                <input type="text" class="api-input" value="https://api.protectpro.uz/v1/scan" readonly>
+                                <button class="btn-copy"
+                                    onclick="copyToClipboard('https://api.protectpro.uz/v1/scan')">Nusxa</button>
+                            </div>
+                        </div>
+
+                        <h4 data-i18n="guide.codeExample">Misol: Quick Scan</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JavaScript</span>
+                                <button class="code-copy" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre><code>const API_KEY = 'your_api_key_here';
+const URL_TO_SCAN = 'https://example.com';
+
+async function quickScan(url) {
+  const response = await fetch('https://api.protectpro.uz/v1/scan', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_KEY}`
+    },
+    body: JSON.stringify({
+      url: url,
+      scan_type: 'quick'
+    })
+  });
+  
+  const result = await response.json();
+  console.log('Scan Result:', result);
+  return result;
+}
+
+quickScan(URL_TO_SCAN);</code></pre>
+                        </div>
+
+                        <h4>Response Format</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>JSON Response</span>
+                            </div>
+                            <pre><code>{
+  "scan_id": "a1b2c3d4-e5f6-7890",
+  "url": "https://example.com",
+  "scan_type": "deep",
+  "timestamp": "2024-12-07T10:30:00Z",
+  "risk_score": 15,
+  "status": "safe",
+  "threats_detected": [],
+  "network_calls": 12,
+  "suspicious_patterns": [],
+  "recommendations": [
+    "URL appears safe to visit"
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="pricing" class="guide-section">
+                    <h2 class="guide-section-title">
+                        <span class="section-number">04</span>
+                        <span data-i18n="guide.pricing">Tariflar va Limitlar</span>
+                    </h2>
+
+                    <div class="pricing-comparison">
+                        <div class="comparison-card">
+                            <h3 data-i18n="guide.freePlan">🆓 FREE</h3>
+                            <div class="comparison-price">$0</div>
+                            <ul class="comparison-features">
+                                <li data-i18n="guide.pricingFeatures.free.f1">✓ 5 ta URL tekshirish/kun</li>
+                                <li data-i18n="guide.pricingFeatures.free.f2">✓ Quick Scan</li>
+                                <li data-i18n="guide.pricingFeatures.free.f3">✓ Deep Scan</li>
+                                <li data-i18n="guide.pricingFeatures.free.f4">✓ Tarix (10 ta oxirgi)</li>
+                                <li data-i18n="guide.pricingFeatures.free.f5">✗ APK tekshirish</li>
+                                <li data-i18n="guide.pricingFeatures.free.f6">✗ API access</li>
+                                <li data-i18n="guide.pricingFeatures.free.f7">✗ Priority support</li>
+                            </ul>
+                            <button class="btn btn-secondary" onclick="selectPlan('free')"
+                                data-i18n="guide.startFreeBtn">Bepul Boshlash</button>
+                        </div>
+
+                        <div class="comparison-card featured">
+                            <div class="comparison-badge" data-i18n="pricing.mostPopular">MASHHUR</div>
+                            <h3 data-i18n="guide.monthlyPrice">💳 Oylik</h3>
+                            <div class="comparison-price">$6.59<span>/oy</span></div>
+                            <ul class="comparison-features">
+                                <li data-i18n="guide.pricingFeatures.monthly.f1">✓ 100+ URL tekshirish/kun</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f2">✓ Quick & Deep Scan</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f3">✓ APK fayl tekshirish</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f4">✓ To'liq tarix</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f5">✓ API access (100 req/day)</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f6">✓ Email support</li>
+                                <li data-i18n="guide.pricingFeatures.monthly.f7">✓ Priority queueing</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectPlan('monthly')"
+                                data-i18n="guide.selectPlan">Obunani Tanlash</button>
+                        </div>
+
+                        <div class="comparison-card">
+                            <h3 data-i18n="guide.yearlyPrice">🏆 Yillik</h3>
+                            <div class="comparison-price">$17.99<span>/yil</span></div>
+                            <ul class="comparison-features">
+                                <li data-i18n="guide.pricingFeatures.yearly.f1">✓ 10,000+ URL/kun</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f2">✓ Barcha scan turlari</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f3">✓ APK va EXE tekshirish</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f4">✓ Unlimited tarix</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f5">✓ API access (10k req/day)</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f6">✓ 24/7 support</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f7">✓ Custom integration</li>
+                                <li data-i18n="guide.pricingFeatures.yearly.f8">✓ White-label option</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectPlan('yearly')"
+                                data-i18n="guide.selectPlan">Obunani Tanlash</button>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h3 data-i18n="guide.paymentPolicyTitle">💰 To'lov va Qaytarish Siyosati</h3>
+                        <div class="info-box">
+                            <p><strong data-i18n="guide.paymentMethodsLabel">To'lov usullari:</strong> UzCard, Humo,
+                                Visa,
+                                Mastercard, PayPal, Click, Payme</p>
+                            <p><strong data-i18n="contact.refundPolicy">Pulni qaytarish:</strong> <span
+                                    data-i18n="contact.refundInfo">Agar xizmat sizga mos kelmasa, 7 kun ichida 70% ni
+                                    qaytarib beramiz.</span></p>
+                            <p><strong data-i18n="guide.autoRenewalLabel">Avtomatik yangilanish:</strong> <span
+                                    data-i18n="guide.autoRenewalText">Obunalar avtomatik yangilanadi. Istalgan vaqt
+                                    bekor qilish mumkin.</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="faq" class="guide-section">
+                    <h2 class="guide-section-title">
+                        <span class="section-number">05</span>
+                        <span data-i18n="guide.faq">Savol-Javob (FAQ)</span>
+                    </h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q1">ProtectPro qanday ishlaydi?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a1">
+                                ProtectPro AI-powered heuristic tahlil, sandbox texnologiyasi va real-time monitoring
+                                yordamida URL'larni tekshiradi. Quick scan reputatsiya va pattern matching,
+                                Deep scan esa to'liq browser simulation orqali amalga oshiriladi.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q2">FREE rejimdagi limitlar qanday?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a2">
+                                FREE rejimda kuniga 5 ta URL tekshirish mumkin. Limit har kuni soat 00:00 da reset
+                                bo'ladi.
+                                Ko'proq imkoniyat uchun Oylik ($6.59/oy - 100+ URL/kun) yoki Yillik ($17.99/yil - 10000+
+                                URL/kun)
+                                obunaga o'ting.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q3">APK tekshirish qanday ishlaydi?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a3">
+                                APK tekshirish faqat Premium (Oylik yoki Yillik) obunada mavjud. Tizim APK faylni
+                                yuklaydi,
+                                AndroidManifest.xml ni tahlil qiladi, ruxsatlarni tekshiradi, zararli kod qidiradi va
+                                imzoni verifikatsiya qiladi. Jarayon 30-60 soniya davom etadi.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q4">Ma'lumotlarim xavfsizmi?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a4">
+                                Ha! Biz zero-log siyosatiga amal qilamiz. Faqat scan metadata saqlanadi,
+                                hech qanday shaxsiy ma'lumot yoki parollar to'planmaydi. Barcha ulanishlar
+                                end-to-end shifrlangan.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q5">Pulni qaytarish jarayoni qanday?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a5">
+                                Agar xizmat sizga mos kelmasa, 7 kun ichida protectproai@gmail.com ga murojaat qiling.
+                                To'lov summasining 70% i 3-5 ish kuni ichida qaytariladi. Qolgan 30% processing fees
+                                uchun.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q6">Deep scan qancha vaqt oladi?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a6">
+                                O'rtacha 20-60 soniya. Bu vaqt saytning murakkabligiga,
+                                JavaScript kodi hajmiga va tarmoq so'rovlari soniga bog'liq.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span data-i18n="guide.faqItems.q7">Qo'shimcha yordam kerakmi?</span>
+                                <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer" data-i18n="guide.faqItems.a7">
+                                Bizning jamoamiz sizga yordam berishga tayyor! Email: protectproai@gmail.com,
+                                Telegram: @protectproai, Telefon: +998 90 163 54 44 yoki +998 90 150 13 95
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ProtectPro</h4>
+                <p data-i18n="footer.desc">Professional kiberxavfsizlik yechimlari</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.links">Havolalar</h4>
+                <a href="guide.html" data-i18n="nav.guide">Qo'llanma</a>
+                <a href="courses.html" data-i18n="nav.courses">Kurslar</a>
+                <a href="team.html" data-i18n="nav.team">Jamoa</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact">Aloqa</h4>
+                <a href="mailto:protectproai@gmail.com">protectproai@gmail.com</a>
+                <a href="tel:+998901635444">+998 90 163 54 44</a>
+                <a href="tel:+998901501395">+998 90 150 13 95</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.social">Ijtimoiy tarmoqlar</h4>
+                <a href="https://instagram.com/hackintoshuz" target="_blank">Instagram</a>
+                <a href="https://t.me/protectproai" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/fayzziyoxabibulloyev" target="_blank">LinkedIn</a>
+                <a href="https://github.com/faithydev" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> ProtectPro. <span data-i18n="footer.rights">Barcha huquqlar
+                    himoyalangan</span>.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

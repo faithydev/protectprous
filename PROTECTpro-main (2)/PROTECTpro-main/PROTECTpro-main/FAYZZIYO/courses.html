@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Kurslari - ProtectPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">P</div>
+                <div class="logo-text">
+                    <span class="brand-name">ProtectPro</span>
+                    <span class="brand-tagline">Elite Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Asosiy</a></li>
+                <li><a href="guide.html" data-i18n="nav.guide">Qo'llanma</a></li>
+                <li><a href="courses.html" class="active" data-i18n="nav.courses">Kurslar</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Aloqa</a></li>
+                <li><a href="team.html" data-i18n="nav.team">Jamoa</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container courses-page">
+        <section class="page-header">
+            <div class="header-badge">
+                <span class="pulse-dot"></span>
+                <span>PROFESSIONAL TRAINING</span>
+            </div>
+            <h1 class="page-title" data-i18n="courses.pageTitle">Ethical Hacking Kurslari</h1>
+            <p class="page-subtitle" data-i18n="courses.pageSubtitle">Professional kiberxavfsizlik mutaxassisi bo'lish
+                yo'lida 6 ta intensiv modul</p>
+        </section>
+
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-number">01</div>
+                <div class="course-badge" data-i18n="courses.beginner">Beginner</div>
+                <h3 class="course-title" data-i18n="courses.module01">Kiberxavfsizlikka Kirish</h3>
+                <p class="course-description" data-i18n="courses.module01Desc">
+                    Asosiy tushunchalar, tarmoq protokollari, xavfsizlik prinsiplari va
+                    ethical hacking asoslari bilan tanishish.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m1.t1">• CIA Triad (Confidentiality, Integrity, Availability)</li>
+                    <li data-i18n="courses.topics.m1.t2">• Tarmoq asoslari: TCP/IP, HTTP/HTTPS, DNS</li>
+                    <li data-i18n="courses.topics.m1.t3">• Linux terminal va asosiy buyruqlar</li>
+                    <li data-i18n="courses.topics.m1.t4">• Information gathering metodlari</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 40 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 12 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">02</div>
+                <div class="course-badge" data-i18n="courses.intermediate">Intermediate</div>
+                <h3 class="course-title" data-i18n="courses.module02">Network Penetration Testing</h3>
+                <p class="course-description" data-i18n="courses.module02Desc">
+                    Tarmoq xavfsizligini tekshirish, zaifliklarni aniqlash va
+                    exploitation texnikalarini o'rganish.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m2.t1">• Port scanning va service enumeration (Nmap)</li>
+                    <li data-i18n="courses.topics.m2.t2">• Vulnerability assessment (Nessus, OpenVAS)</li>
+                    <li data-i18n="courses.topics.m2.t3">• Metasploit Framework</li>
+                    <li data-i18n="courses.topics.m2.t4">• Man-in-the-Middle (MITM) attacks</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 50 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 15 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">03</div>
+                <div class="course-badge" data-i18n="courses.intermediate">Intermediate</div>
+                <h3 class="course-title" data-i18n="courses.module03">Web Application Security</h3>
+                <p class="course-description" data-i18n="courses.module03Desc">
+                    OWASP Top 10 zaifliklar, web exploitation va secure coding
+                    amaliyotlari.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m3.t1">• SQL Injection, XSS, CSRF hujumlari</li>
+                    <li data-i18n="courses.topics.m3.t2">• Burp Suite professional foydalanish</li>
+                    <li data-i18n="courses.topics.m3.t3">• API security testing</li>
+                    <li data-i18n="courses.topics.m3.t4">• Authentication va authorization zaifliklarini aniqlash</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 60 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 18 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">04</div>
+                <div class="course-badge" data-i18n="courses.advanced">Advanced</div>
+                <h3 class="course-title" data-i18n="courses.module04">Mobile & IoT Security</h3>
+                <p class="course-description" data-i18n="courses.module04Desc">
+                    Android/iOS ilovalar va IoT qurilmalari xavfsizligini tekshirish
+                    metodlari.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m4.t1">• Android reverse engineering (APK analysis)</li>
+                    <li data-i18n="courses.topics.m4.t2">• iOS jailbreak va pentesting</li>
+                    <li data-i18n="courses.topics.m4.t3">• IoT protokollari: MQTT, CoAP, Zigbee</li>
+                    <li data-i18n="courses.topics.m4.t4">• Firmware analysis va hardware hacking</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 45 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 14 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">05</div>
+                <div class="course-badge" data-i18n="courses.advanced">Advanced</div>
+                <h3 class="course-title" data-i18n="courses.module05">Malware Analysis & Reverse Engineering</h3>
+                <p class="course-description" data-i18n="courses.module05Desc">
+                    Zararli dasturlarni tahlil qilish, reverse engineering va
+                    behavioral analysis.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m5.t1">• Static va Dynamic malware analysis</li>
+                    <li data-i18n="courses.topics.m5.t2">• Assembly language va debuggers (x64dbg, IDA Pro)</li>
+                    <li data-i18n="courses.topics.m5.t3">• Packing, obfuscation va anti-analysis texnikalari</li>
+                    <li data-i18n="courses.topics.m5.t4">• Ransomware, trojans, rootkits tahlili</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 55 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 16 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">06</div>
+                <div class="course-badge" data-i18n="courses.expert">Expert</div>
+                <h3 class="course-title" data-i18n="courses.module06">Red Team Operations</h3>
+                <p class="course-description" data-i18n="courses.module06Desc">
+                    Real-world attack scenarios, social engineering va advanced
+                    exploitation techniques.
+                </p>
+                <ul class="course-topics">
+                    <li data-i18n="courses.topics.m6.t1">• Active Directory exploitation</li>
+                    <li data-i18n="courses.topics.m6.t2">• Phishing campaigns va social engineering</li>
+                    <li data-i18n="courses.topics.m6.t3">• Privilege escalation (Windows/Linux)</li>
+                    <li data-i18n="courses.topics.m6.t4">• Lateral movement va persistence</li>
+                </ul>
+                <div class="course-meta">
+                    <span class="course-duration">⏱️ 70 <span data-i18n="courses.hours">soat</span></span>
+                    <span class="course-lessons">📚 20 <span data-i18n="courses.lessons">dars</span></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="pricing-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="courses.pricingTitle">Tariflar</h2>
+                <p class="section-subtitle" data-i18n="courses.pricingSubtitle">O'zingizga mos rejani tanlang</p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label active" id="monthlyLabel" data-i18n="courses.monthly">Oylik to'lov</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="yearlyLabel"><span data-i18n="courses.yearly">Yillik to'lov</span> <span
+                        class="discount-badge" data-i18n="courses.discount">-20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Starter</h3>
+                        <div class="pricing-icon">🚀</div>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="2500000" data-yearly="24000000">2,500,000</span>
+                        <span class="price-currency">UZS</span>
+                        <span class="price-period" data-i18n="courses.perMonth">/oyiga</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="courses.pricingFeatures.starter.f1">✓ 1-2 kurslar (Beginner level)</li>
+                        <li data-i18n="courses.pricingFeatures.starter.f2">✓ Asosiy video darsliklar</li>
+                        <li data-i18n="courses.pricingFeatures.starter.f3">✓ Telegram guruh support</li>
+                        <li data-i18n="courses.pricingFeatures.starter.f4">✓ Sertifikat (kurs tugagach)</li>
+                        <li data-i18n="courses.pricingFeatures.starter.f5">✗ Jonli webinarlar</li>
+                        <li data-i18n="courses.pricingFeatures.starter.f6">✗ Mentor support</li>
+                    </ul>
+                    <button class="btn btn-pricing" onclick="selectPlan('starter')"
+                        data-i18n="courses.select">Tanlash</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-badge" data-i18n="courses.mostPopular">MASHHUR</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Professional</h3>
+                        <div class="pricing-icon">💼</div>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="4000000" data-yearly="38400000">4,000,000</span>
+                        <span class="price-currency">UZS</span>
+                        <span class="price-period" data-i18n="courses.perMonth">/oyiga</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="courses.pricingFeatures.professional.f1">✓ 1-4 kurslar (Beginner to Advanced)
+                        </li>
+                        <li data-i18n="courses.pricingFeatures.professional.f2">✓ Barcha video darsliklar</li>
+                        <li data-i18n="courses.pricingFeatures.professional.f3">✓ Haftalik jonli webinarlar</li>
+                        <li data-i18n="courses.pricingFeatures.professional.f4">✓ Telegram + Email support</li>
+                        <li data-i18n="courses.pricingFeatures.professional.f5">✓ Lab environment access</li>
+                        <li data-i18n="courses.pricingFeatures.professional.f6">✓ Professional sertifikat</li>
+                    </ul>
+                    <button class="btn btn-pricing btn-primary" onclick="selectPlan('professional')"
+                        data-i18n="courses.select">Tanlash</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Expert</h3>
+                        <div class="pricing-icon">🎯</div>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="6500000" data-yearly="62400000">6,500,000</span>
+                        <span class="price-currency">UZS</span>
+                        <span class="price-period" data-i18n="courses.perMonth">/oyiga</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="courses.pricingFeatures.expert.f1">✓ Barcha 6 ta kurs</li>
+                        <li data-i18n="courses.pricingFeatures.expert.f2">✓ Premium video materials</li>
+                        <li data-i18n="courses.pricingFeatures.expert.f3">✓ Kunlik mentor support</li>
+                        <li data-i18n="courses.pricingFeatures.expert.f4">✓ Private lab environment</li>
+                        <li data-i18n="courses.pricingFeatures.expert.f5">✓ Real-world projects</li>
+                        <li data-i18n="courses.pricingFeatures.expert.f6">✓ Job placement assistance</li>
+                    </ul>
+                    <button class="btn btn-pricing" onclick="selectPlan('expert')"
+                        data-i18n="courses.select">Tanlash</button>
+                </div>
+
+                <div class="pricing-card vip">
+                    <div class="vip-badge" data-i18n="courses.vip">VIP</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Elite VIP</h3>
+                        <div class="pricing-icon">👑</div>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="12000000" data-yearly="115200000">12,000,000</span>
+                        <span class="price-currency">UZS</span>
+                        <span class="price-period" data-i18n="courses.perMonth">/oyiga</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="courses.pricingFeatures.vip.f1">✓ Barcha kurslar + bonus materials</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f2">✓ 1-on-1 mentorship</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f3">✓ Custom learning path</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f4">✓ Premium lab infrastructure</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f5">✓ Lifetime access</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f6">✓ International certification prep</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f7">✓ Career coaching</li>
+                        <li data-i18n="courses.pricingFeatures.vip.f8">✓ Priority support (24/7)</li>
+                    </ul>
+                    <button class="btn btn-pricing btn-vip" onclick="selectPlan('vip')"
+                        data-i18n="courses.select">Tanlash</button>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p>💡 <strong data-i18n="courses.note">Eslatma:</strong> <span data-i18n="courses.noteText">Barcha
+                        tariflar uchun ro'yxatdan o'tish talab etiladi.
+                        To'lov amalga oshirilgandan keyin darhol kurs materiallariga kirish imkoniyati beriladi.</span>
+                </p>
+                <p>💰 <strong data-i18n="courses.refund">Pulni qaytarish:</strong> <span
+                        data-i18n="courses.refundText">Agar kurs sizga mos kelmasa, 7 kun ichida to'lov summasining 70%
+                        ini qaytarib beramiz.</span></p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-card">
+                <h2 data-i18n="courses.ctaTitle">Kiberxavfsizlik mutaxassisi bo'ling!</h2>
+                <p data-i18n="courses.ctaText">Bugun boshlab, ertaga professional. Biz bilan kiberxavfsizlik sohasida
+                    karyera quring.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-i18n="courses.ctaRegister">Ro'yxatdan o'tish</a>
+                    <a href="guide.html" class="btn btn-secondary" data-i18n="courses.ctaDetails">Batafsil ma'lumot</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ProtectPro</h4>
+                <p data-i18n="footer.desc">Professional kiberxavfsizlik yechimlari</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.links">Havolalar</h4>
+                <a href="guide.html" data-i18n="nav.guide">Qo'llanma</a>
+                <a href="courses.html" data-i18n="nav.courses">Kurslar</a>
+                <a href="team.html" data-i18n="nav.team">Jamoa</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact">Aloqa</h4>
+                <a href="mailto:protectproai@gmail.com">protectproai@gmail.com</a>
+                <a href="tel:+998901635444">+998 90 163 54 44</a>
+                <a href="tel:+998901501395">+998 90 150 13 95</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.social">Ijtimoiy tarmoqlar</h4>
+                <a href="https://instagram.com/hackintoshuz" target="_blank">Instagram</a>
+                <a href="https://t.me/protectproai" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/fayzziyoxabibulloyev" target="_blank">LinkedIn</a>
+                <a href="https://github.com/faithydev" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> ProtectPro. <span data-i18n="footer.rights">Barcha huquqlar
+                    himoyalangan</span>.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

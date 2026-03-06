@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtectPro - Professional Kiberxavfsizlik Platformasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300ff90'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='%23000' font-family='monospace' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">P</div>
+                <div class="logo-text">
+                    <span class="brand-name">ProtectPro</span>
+                    <span class="brand-tagline">Elite Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active" data-i18n="nav.home">Asosiy</a></li>
+                <li><a href="guide.html" data-i18n="nav.guide">Qo'llanma</a></li>
+                <li><a href="courses.html" data-i18n="nav.courses">Kurslar</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Aloqa</a></li>
+                <li><a href="team.html" data-i18n="nav.team">Jamoa</a></li>
+                <li><a href="payment.html" class="payment-link">To'lov</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-section">
+            <div class="glitch-overlay"></div>
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span data-i18n="hero.status">SYSTEM ACTIVE</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="PROTECTPRO">PROTECTPRO</span>
+                </h1>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">Professional Kiberxavfsizlik Platformasi</h2>
+                <p class="hero-description" data-i18n="hero.description">
+                    Zararli havolalarni aniqlash, real-time monitoring va kompleks xavfsizlik tahlili.
+                    Bizning missiyamiz - O'zbekistonning raqamli xavfsizligini ta'minlash va
+                    professional kiberxavfsizlik mutaxassislarini tayyorlash.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="checkedUrls">0</span>
+                        <span class="stat-label" data-i18n="stats.checked">Tekshirilgan URL</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="activeUsers">0</span>
+                        <span class="stat-label" data-i18n="stats.users">Aktiv Foydalanuvchi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99</span>
+                        <span class="stat-label" data-i18n="stats.accuracy">% Aniqlik</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#scanner" class="btn btn-primary">
+                        <span data-i18n="hero.start">Tekshirishni boshlash</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="guide.html" class="btn btn-secondary">
+                        <span data-i18n="hero.guide">Qo'llanmani ko'rish</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-terminal">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn term-close"></span>
+                            <span class="term-btn term-minimize"></span>
+                            <span class="term-btn term-maximize"></span>
+                        </div>
+                        <div class="terminal-title">protectpro@scanner:~$</div>
+                    </div>
+                    <div class="terminal-body" id="heroTerminal">
+                        <div class="term-line"><span class="term-prompt">$</span> initializing security scanner...</div>
+                        <div class="term-line"><span class="term-success">✓</span> AI heuristics engine loaded</div>
+                        <div class="term-line"><span class="term-success">✓</span> Sandbox environment ready</div>
+                        <div class="term-line"><span class="term-success">✓</span> Network monitor active</div>
+                        <div class="term-line term-cursor"><span class="term-prompt">$</span> ready_</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scanner-section" id="scanner">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="scanner.title">URL Xavfsizlik Skaneri</h2>
+                <p class="section-subtitle" data-i18n="scanner.subtitle">Har qanday havolani ochishdan oldin
+                    xavfsizligini tekshiring</p>
+            </div>
+
+            <div class="scanner-container">
+                <div class="scanner-input-section">
+                    <div class="input-wrapper">
+                        <input type="text" id="urlInput" class="scanner-input"
+                            placeholder="https://example.com/suspicious-link">
+                        <div class="input-icon">🔗</div>
+                    </div>
+                    <div class="scanner-buttons">
+                        <button class="btn btn-scan" id="quickScanBtn">
+                            <span data-i18n="scanner.quick">⚡ Tez Skanerlash</span>
+                        </button>
+                        <button class="btn btn-deep" id="deepScanBtn">
+                            <span data-i18n="scanner.deep">🔬 Chuqur Tahlil</span>
+                        </button>
+                    </div>
+
+                    <div class="apk-upload-section">
+                        <h3 data-i18n="scanner.apk">APK Fayl Tekshirish</h3>
+                        <div class="upload-wrapper">
+                            <input type="file" id="apkInput" accept=".apk" style="display:none">
+                            <button class="btn btn-upload" id="apkUploadBtn">
+                                <span>📱 APK yuklash</span>
+                            </button>
+                            <p class="upload-note" data-i18n="scanner.apkNote" style="display:none"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scanner-terminal">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-title" data-i18n="scanner.results">Live Scan Results</div>
+                            <div class="scan-status" id="scanStatus">IDLE</div>
+                        </div>
+                        <div class="terminal-body" id="scanOutput">
+                            <div class="term-line term-muted">// Waiting for URL input...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scan-history" id="scanHistory">
+                    <h3 data-i18n="scanner.history">Tekshirilgan URL'lar</h3>
+                    <div id="historyList" class="history-list">
+                        <p class="history-empty" data-i18n="scanner.noHistory">Hozircha tekshiruvlar yo'q</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features.title">Imkoniyatlar</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">Professional darajadagi xavfsizlik vositalari
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 data-i18n="features.monitoring">Real-time Monitoring</h3>
+                    <p data-i18n="features.monitoringDesc">Fon so'rovlar, WebSocket va sendBeacon ulanishlarini darhol
+                        aniqlash</p>
+                    <div class="feature-tech">AI • Heuristics • ML</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3 data-i18n="features.sandbox">Sandbox Tahlil</h3>
+                    <p data-i18n="features.sandboxDesc">Headless browser yordamida xavfli kodlarni izolyatsiyalangan
+                        muhitda tekshirish</p>
+                    <div class="feature-tech">Chromium • Isolation</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚨</div>
+                    <h3 data-i18n="features.alerts">Intelligent Alerts</h3>
+                    <p data-i18n="features.alertsDesc">Phishing, malware va data exfiltration haqida oniy
+                        ogohlantirishlar</p>
+                    <div class="feature-tech">Pattern Recognition</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="features.privacy">Maxfiylik Himoyasi</h3>
+                    <p data-i18n="features.privacyDesc">Zero-log siyosati, faqat metadata tahlili, end-to-end
+                        enkriptsiya</p>
+                    <div class="feature-tech">E2E Encryption</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-i18n="features.dashboard">Tahlil Dashboard</h3>
+                    <p data-i18n="features.dashboardDesc">Batafsil statistika, threat intelligence va xavfsizlik
+                        reytingi</p>
+                    <div class="feature-tech">Analytics • Reports</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 data-i18n="features.api">API Integration</h3>
+                    <p data-i18n="features.apiDesc">RESTful API orqali o'z dasturlaringizga integratsiya qilish</p>
+                    <div class="feature-tech">REST • Webhooks</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-info-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pricing.pricingTitle">Tariflar va Limitlar</h2>
+                <p class="section-subtitle" data-i18n="pricing.pricingSubtitle">Batafsil tariflar ma'lumotini ko'rish
+                    uchun qo'llanmani tekshiring</p>
+            </div>
+
+            <div class="pricing-info-card">
+                <div class="pricing-info-content">
+                    <div class="pricing-feature-item">
+                        <div class="feature-icon">🔗</div>
+                        <div class="feature-text">
+                            <h3 data-i18n="pricing.urlScanner">URL Skaneri</h3>
+                            <p data-i18n="pricing.urlScannerDesc">Unlimited URL'larni haftada tekshiring va tarixini
+                                saqlang</p>
+                        </div>
+                    </div>
+                    <div class="pricing-feature-item">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-text">
+                            <h3 data-i18n="pricing.realtimeMonitoring">Real-time Monitoring</h3>
+                            <p data-i18n="pricing.realtimeMonitoringDesc">24/7 avtomatik monitoring va oniy
+                                notifikatsiyalar</p>
+                        </div>
+                    </div>
+                    <div class="pricing-feature-item">
+                        <div class="feature-icon">📱</div>
+                        <div class="feature-text">
+                            <h3 data-i18n="pricing.apkChecking">APK Tekshirish</h3>
+                            <p data-i18n="pricing.apkCheckingDesc">Android ilovalarini xavfsizlik uchun tahlil qilish
+                                (Premium)</p>
+                        </div>
+                    </div>
+                    <div class="pricing-feature-item">
+                        <div class="feature-icon">⚙️</div>
+                        <div class="feature-text">
+                            <h3 data-i18n="pricing.apiAccess">API Access</h3>
+                            <p data-i18n="pricing.apiAccessDesc">RESTful API orqali o'z loyihalaringizga integratsiya
+                                qilish</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-cta">
+                    <p data-i18n="pricing.moreDetails">Barcha tariflar va cheklovlar haqida batafsil ma'lumot olish
+                        uchun:</p>
+                    <a href="guide.html#pricing" class="btn btn-primary" data-i18n="pricing.viewPricing">Tariflar
+                        bo'limiga o'tish →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title" data-i18n="about.title">Loyiha haqida</h2>
+                    <p class="about-text" data-i18n="about.text1">
+                        <strong>ProtectPro</strong> — O'zbekistonda yaratilgan birinchi professional kiberxavfsizlik
+                        platformasi.
+                        Bizning maqsadimiz mamlakatimizda raqamli xavfsizlik madaniyatini rivojlantirish va
+                        har bir foydalanuvchini onlayn xavf-xatarlardan himoya qilishdir.
+                    </p>
+                    <p class="about-text" data-i18n="about.text2">
+                        Platforma AI-powered heuristic engine, sandbox tahlil va real-time monitoring texnologiyalariga
+                        asoslangan.
+                        Biz nafaqat xavfli havolalarni aniqlaymiz, balki foydalanuvchilarni kiberxavfsizlik bo'yicha
+                        o'qitish va professional mutaxassislar tayyorlash bilan ham shug'ullanamiz.
+                    </p>
+
+                    <div class="tech-stack">
+                        <h3 data-i18n="about.tech">Texnologiyalar:</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Headless Chrome</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="cyber-graphic">
+                        <div class="cyber-circle cyber-circle-1"></div>
+                        <div class="cyber-circle cyber-circle-2"></div>
+                        <div class="cyber-circle cyber-circle-3"></div>
+                        <div class="cyber-shield">🛡️</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ProtectPro</h4>
+                <p data-i18n="footer.desc">Professional kiberxavfsizlik yechimlari</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.links">Havolalar</h4>
+                <a href="guide.html" data-i18n="nav.guide">Qo'llanma</a>
+                <a href="courses.html" data-i18n="nav.courses">Kurslar</a>
+                <a href="team.html" data-i18n="nav.team">Jamoa</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact">Aloqa</h4>
+                <a href="mailto:protectproai@gmail.com">protectproai@gmail.com</a>
+                <a href="tel:+998901635444">+998 90 163 54 44</a>
+                <a href="tel:+998901501395">+998 90 150 13 95</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.social">Ijtimoiy tarmoqlar</h4>
+                <a href="https://instagram.com/hackintoshuz" target="_blank">Instagram</a>
+                <a href="https://t.me/protectproai" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/fayzziyoxabibulloyev" target="_blank">LinkedIn</a>
+                <a href="https://github.com/faithydev" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> ProtectPro. <span data-i18n="footer.rights">Barcha huquqlar
+                    himoyalangan</span>.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

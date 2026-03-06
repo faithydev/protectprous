@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizning Jamoa - ProtectPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">P</div>
+                <div class="logo-text">
+                    <span class="brand-name">ProtectPro</span>
+                    <span class="brand-tagline">Elite Cybersecurity</span>
+                </div>
+            </div>
+
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Asosiy</a></li>
+                <li><a href="guide.html" data-i18n="nav.guide">Qo'llanma</a></li>
+                <li><a href="courses.html" data-i18n="nav.courses">Kurslar</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Aloqa</a></li>
+                <li><a href="team.html" class="active" data-i18n="nav.team">Jamoa</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container team-page">
+        <section class="page-header">
+            <div class="header-badge">
+                <span class="pulse-dot"></span>
+                <span>ELITE TEAM</span>
+            </div>
+            <h1 class="page-title" data-i18n="team.pageTitle">Bizning Jamoa</h1>
+            <p class="page-subtitle" data-i18n="team.pageSubtitle">ProtectPro ni yaratuvchilar - professional
+                kiberxavfsizlik mutaxassislari</p>
+        </section>
+
+        <section class="team-intro">
+            <div class="intro-card">
+                <h2 data-i18n="team.about">Biz haqimizda</h2>
+                <p data-i18n="team.introText1">
+                    ProtectPro jamoasi - O'zbekistonda kiberxavfsizlik sohasida faoliyat yurituvchi
+                    professional mutaxassislardan iborat. Bizning maqsadimiz mamlakatimizda raqamli
+                    xavfsizlik madaniyatini rivojlantirish va yangi avlod IT mutaxassislarini tayyorlashdir.
+                </p>
+                <p data-i18n="team.introText2">
+                    Biz xalqaro standartlarga mos keladigan platformalar yaratamiz va professional
+                    kiberxavfsizlik ta'limini O'zbekiston bozoriga olib kiramiz.
+                </p>
+
+                <div class="team-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label" data-i18n="team.experienceLabel">Yillik tajriba</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label" data-i18n="team.projectsLabel">Amaliyotlar</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label" data-i18n="team.studentsLabel">Tahsil olganlar</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label" data-i18n="team.supportLabel">Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-members">
+            <h2 class="section-title" data-i18n="team.founders">Yaratuvchilar</h2>
+
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-image">
+                        <div class="avatar-placeholder" style="background: linear-gradient(135deg, #00e5ff, #00ff90);">
+                            <div class="avatar-icon">👨‍💻</div>
+                        </div>
+                        <div class="member-status">
+                            <span class="status-dot"></span>
+                            <span data-i18n="team.onlineStatus">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="member-info">
+                        <h3 class="member-name">Fayzziyo Xabibulloyev</h3>
+                        <div class="member-role" data-i18n="team.teamLead">Co-Founder & Lead Developer</div>
+
+                        <div class="member-bio">
+                            <p data-i18n="team.member1Bio1">5 yillik tajribaga ega professional coder va cybersecurity
+                                mutaxassisi. Ko'plab murakkab loyihalarni muvaffaqiyatli amalga oshirgan. Barcha
+                                dasturlash tillarini mukammal biladi: Python, JavaScript, C++, Java, Go, Rust va
+                                boshqalar. Web development, mobile development, AI/ML, blockchain va kiberxavfsizlik
+                                sohasida chuqur bilimga ega.</p>
+                            <p data-i18n="team.member1Bio2">Offensive Security, penetration testing, malware analysis va
+                                threat intelligence bo'yicha ekspert. ProtectPro platformasining texnik arxitekturasini
+                                yaratgan va barcha security componentlarni ishlab chiqqan.</p>
+                        </div>
+
+                        <div class="member-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">Rust</span>
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Malware Analysis</span>
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">Blockchain</span>
+                            <span class="skill-tag">Linux/Unix</span>
+                            <span class="skill-tag">Docker/K8s</span>
+                        </div>
+
+                        <div class="member-certs">
+                            <h4 data-i18n="team.certificationsLabel">Sertifikatlar va yutuqlar:</h4>
+                            <div class="cert-list">
+                                <span class="cert-badge">🎖️ OSCP</span>
+                                <span class="cert-badge">🎖️ CEH</span>
+                                <span class="cert-badge">🎖️ CISSP</span>
+                                <span class="cert-badge">🎖️ AWS Certified</span>
+                                <span class="cert-badge">🏆 <span data-i18n="team.badgeProjects">100+
+                                        Loyihalar</span></span>
+                                <span class="cert-badge">🏆 Bug Bounty Expert</span>
+                            </div>
+                        </div>
+
+                        <div class="member-contact">
+                            <a href="mailto:isfaithyy@gmail.com" class="contact-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                isfaithyy@gmail.com
+                            </a>
+                            <a href="tel:+998901635444" class="contact-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                +998 90 163 54 44
+                            </a>
+                        </div>
+
+                        <div class="member-social">
+                            <a href="https://www.linkedin.com/in/fayzziyoxabibulloyev" target="_blank"
+                                class="social-icon" title="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/faithydev" target="_blank" class="social-icon" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                </svg>
+                            </a>
+                            <a href="https://t.me/protectproai" target="_blank" class="social-icon" title="Telegram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-image">
+                        <div class="avatar-placeholder" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                            <div class="avatar-icon">👨‍💼</div>
+                        </div>
+                        <div class="member-status">
+                            <span class="status-dot"></span>
+                            <span data-i18n="team.onlineStatus">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="member-info">
+                        <h3 class="member-name">Muhammaddiyor Abdulaliyev</h3>
+                        <div class="member-role" data-i18n="team.pentester">Co-Founder & Lead Pentester</div>
+
+                        <div class="member-bio">
+                            <p data-i18n="team.member2Bio1">Tajribali Start Upper va professional Penetration Tester.
+                                Ko'plab startup loyihalarni muvaffaqiyatli boshqargan va scaling qilgan.
+                                Entrepreneurship, business development va strategic planning bo'yicha ekspert.</p>
+                            <p data-i18n="team.member2Bio2">Ethical hacking, red teaming, vulnerability assessment va
+                                security audit sohasida keng tajribaga ega. Barcha dasturlash tillarini biladi va
+                                murakkab security infrastructure'larni qurish va tekshirish bo'yicha mutaxassis. Ko'plab
+                                kompaniyalarga penetration testing xizmatlarini ko'rsatgan va kritik zaifliklarni
+                                topgan.</p>
+                        </div>
+
+                        <div class="member-skills">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Red Team Operations</span>
+                            <span class="skill-tag">Network Security</span>
+                            <span class="skill-tag">Web App Security</span>
+                            <span class="skill-tag">Mobile Security</span>
+                            <span class="skill-tag">Social Engineering</span>
+                            <span class="skill-tag">Business Strategy</span>
+                            <span class="skill-tag">Startup Growth</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bash/PowerShell</span>
+                            <span class="skill-tag">Metasploit</span>
+                        </div>
+
+                        <div class="member-certs">
+                            <h4 data-i18n="team.certificationsLabel">Sertifikatlar va yutuqlar:</h4>
+                            <div class="cert-list">
+                                <span class="cert-badge">🎖️ OSCP</span>
+                                <span class="cert-badge">🎖️ CEH</span>
+                                <span class="cert-badge">🎖️ GPEN</span>
+                                <span class="cert-badge">🎖️ eJPT</span>
+                                <span class="cert-badge">🏆 <span data-i18n="team.badgeProjects">100+
+                                        Loyihalar</span></span>
+                                <span class="cert-badge">🏆 Startup Mentor</span>
+                            </div>
+                        </div>
+
+                        <div class="member-contact">
+                            <a href="mailto:rickno1_2007@icloud.com" class="contact-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                rickno1_2007@icloud.com
+                            </a>
+                            <a href="tel:+998901501395" class="contact-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                +998 90 150 13 95
+                            </a>
+                        </div>
+
+                        <div class="member-social">
+                            <a href="https://instagram.com/hackintoshuz" target="_blank" class="social-icon"
+                                title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                                </svg>
+                            </a>
+                            <a href="https://t.me/protectproai" target="_blank" class="social-icon" title="Telegram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/faithydev" target="_blank" class="social-icon" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <div class="mission-container">
+                <div class="mission-card">
+                    <div class="mission-icon">🎯</div>
+                    <h3 data-i18n="team.mission">Missiyamiz</h3>
+                    <p data-i18n="team.missionText">
+                        O'zbekistonda kiberxavfsizlik sohasini rivojlantirish va professional
+                        mutaxassislar tayyorlash orqali mamlakatimizning raqamli xavfsizligini ta'minlash.
+                    </p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-icon">👁️</div>
+                    <h3 data-i18n="team.vision">Viziyamiz</h3>
+                    <p data-i18n="team.visionText">
+                        Markaziy Osiyo mintaqasida kiberxavfsizlik ta'limi va xizmatlarining
+                        yetakchi platformasi bo'lish, xalqaro standartlarga javob beruvchi mutaxassislar tayyorlash.
+                    </p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-icon">💎</div>
+                    <h3 data-i18n="team.values">Qadriyatlarimiz</h3>
+                    <p data-i18n="team.valuesText">
+                        Sifat, maxfiylik, shaffoflik va uzluksiz ta'lim - bizning asosiy qadriyatlarimiz.
+                        Har bir mijoz uchun individual yondashuv va professional xizmat ko'rsatish.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <h2 class="section-title" data-i18n="team.locationTitle">Bizning manzilimiz</h2>
+            <div class="location-card">
+                <div class="location-icon">📍</div>
+                <h3>Farg'ona, O'zbekiston</h3>
+                <p data-i18n="team.locationDesc">Biz Farg'ona shahrida joylashganmiz va butun O'zbekiston bo'ylab xizmat
+                    ko'rsatamiz.</p>
+                <div class="contact-methods">
+                    <a href="mailto:protectproai@gmail.com" class="method-item">
+                        <span class="method-icon">📧</span>
+                        <span>protectproai@gmail.com</span>
+                    </a>
+                    <a href="tel:+998901635444" class="method-item">
+                        <span class="method-icon">📱</span>
+                        <span>+998 90 163 54 44</span>
+                    </a>
+                    <a href="tel:+998901501395" class="method-item">
+                        <span class="method-icon">📱</span>
+                        <span>+998 90 150 13 95</span>
+                    </a>
+                    <a href="https://t.me/protectproai" target="_blank" class="method-item">
+                        <span class="method-icon">💬</span>
+                        <span>@protectproai</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-section">
+            <div class="join-card">
+                <h2 data-i18n="team.joinHeading">Bizga qo'shiling!</h2>
+                <p data-i18n="team.joinText">
+                    Kiberxavfsizlik sohasida faoliyat yuritmoqchimisiz? Biz doimo iste'dodli
+                    mutaxassislarni qidiramiz. Professional jamoa va qiziqarli loyihalar sizni kutmoqda!
+                </p>
+                <div class="join-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-i18n="team.joinTeam">Ariza yuborish</a>
+                    <a href="courses.html" class="btn btn-secondary" data-i18n="nav.courses">Kurslarni ko'rish</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ProtectPro</h4>
+                <p data-i18n="footer.desc">Professional kiberxavfsizlik yechimlari</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.links">Havolalar</h4>
+                <a href="guide.html" data-i18n="nav.guide">Qo'llanma</a>
+                <a href="courses.html" data-i18n="nav.courses">Kurslar</a>
+                <a href="team.html" data-i18n="nav.team">Jamoa</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.contact">Aloqa</h4>
+                <a href="mailto:protectproai@gmail.com">protectproai@gmail.com</a>
+                <a href="tel:+998901635444">+998 90 163 54 44</a>
+                <a href="tel:+998901501395">+998 90 150 13 95</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.social">Ijtimoiy tarmoqlar</h4>
+                <a href="https://instagram.com/hackintoshuz" target="_blank">Instagram</a>
+                <a href="https://t.me/protectproai" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/fayzziyoxabibulloyev" target="_blank">LinkedIn</a>
+                <a href="https://github.com/faithydev" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> ProtectPro. <span data-i18n="footer.rights">Barcha huquqlar
+                    himoyalangan</span>.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
